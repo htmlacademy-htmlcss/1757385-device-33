@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин гаджетов "Девайс"</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
@@ -14,7 +15,7 @@
           <button class="search-form-button" type="submit">Найти</button>
         </form>
 
-        <button class="catalog-button" type="button">Каталог товаров</button>
+        <button class="button catalog-button" type="button">Каталог товаров</button>
         <ul class="navigation-list navigation-submenu">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Виртуальная реальность</a>
@@ -48,7 +49,7 @@
           </li>
         </ul>
 
-        <ul class="navigation-list">
+        <ul class="navigation-list main-navigation">
           <li class="navigation-item">
             <a class="navigation-link" href="#delivery">Доставка</a>
           </li>
@@ -69,7 +70,7 @@
         <h2 class="visually-hidden">Популярные товары</h2>
 
         <div class="slider-slide">
-          <h3 class="slide-title">Порхает как бабочка,<br>жалит как пчела!</h3>
+          <h3 class="title slide-title">Порхает как бабочка,<br>жалит как пчела!</h3>
           <img class="slide-image" src="images/main-slider/slider-1.png" width="560" height="560" alt="Квадрокоптер-охотник.">
           <div class="slide-index">
             01
@@ -174,28 +175,28 @@
           </div>
 
           <div class="service-tab-content" id="delivery">
-            <h3 class="service-tab-title">Доставка</h3>
+            <h3 class="title service-tab-title">Доставка</h3>
             <p class="service-tab-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
 
           <div class="service-tab-content" id="warranty">
-            <h3 class="service-tab-title">Гарантия</h3>
+            <h3 class="title service-tab-title">Гарантия</h3>
             <p class="service-tab-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
 
           <div class="service-tab-content" id="credit">
-            <h3 class="service-tab-title">Кредит</h3>
+            <h3 class="title service-tab-title">Кредит</h3>
             <p class="service-tab-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </div>
         </div>
       </section>
 
-      <button class="delivery-button" type="button">
+      <button class="button delivery-button" type="button">
         Доставим редкий товар под заказ
       </button>
 
       <section class="about">
-        <h2 class="about-title">О нас</h2>
+        <h2 class="title about-title">О нас</h2>
         <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
 
@@ -209,7 +210,7 @@
       </section>
 
       <section class="contacts" id="contacts">
-        <h2 class="contacts-title">Контакты</h2>
+        <h2 class="title contacts-title">Контакты</h2>
         <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки.</p>
 
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -227,13 +228,13 @@
         <a class="button feedback-button" href="feedback.html">Напишите нам</a>
       </section>
 
-      <section class="subscribtion">
-        <h2 class="subscribtion-title">Подпишитесь<br>на рассылку</h2>
+      <section class="subscription">
+        <h2 class="title subscription-title">Подпишитесь<br>на рассылку</h2>
         <p class="subscription-text">Еженедельный дайджест с обзорами новинок,длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="subscription-text" type="email" name="email" placeholder="Ваш e-mail">
-          <button class="subscription-button" type="submit">Подписаться</button>
+          <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail">
+          <button class="button subscription-button" type="submit">Подписаться</button>
         </form>
 
         <p class="subscription-remark">Это бесплатно</p>
@@ -251,13 +252,13 @@
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item">
-            <a class="footer-navigation-link" href="#delivery">Доставка</a>
+            <a class="navigation-link" href="#delivery">Доставка</a>
           </li>
           <li class="footer-navigation-item">
-            <a class="footer-navigation-link" href="#warranty">Гарантия</a>
+            <a class="navigation-link" href="#warranty">Гарантия</a>
           </li>
           <li class="footer-navigation-item">
-            <a class="footer-navigation-link" href="#contacts">Контакты</a>
+            <a class="navigation-link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </section>

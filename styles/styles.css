@@ -1,0 +1,274 @@
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Raleway Extra Bold */
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+
+  background-color: #ffffff;
+}
+
+.title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #000000;
+}
+
+.button {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/* Pages */
+
+.main-header {
+  color: #000000;
+  background-color: #ffe17f;
+}
+
+/* Navigation */
+.main-navigation,
+.footer-navigation {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.navigation-submenu {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+/* Search */
+.search-form-input,
+.search-form-input::placeholder,
+.search-form-input::-webkit-input-placeholder,
+.search-form-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/* Slider */
+.features-name {
+  font-size: 16px;
+}
+
+.features-value {
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Categories */
+.categories-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.categories-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+/* Services */
+.service {
+  background-color: #f0f0f0;
+}
+
+/* Delivery */
+.delivery-button {
+  background-color: #f0f0f0;
+}
+
+/* About */
+.about-delivery-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+/* Contacts */
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Subscription */
+.subscription {
+  background-color: #f0f0f0;
+}
+
+.subscription-input {
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.subscription-input::placeholder,
+.subscription-input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+/* Footer */
+.main-footer {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+   background-color: #444444;
+}
+
+.footer-address {
+  line-height: 19px;
+}
+
+.footer-phone {
+  color: #ffffff;
+}
+
+/* Inner page */
+.main-inner {
+  color: #000000;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.inner-header-title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #000000;
+}
+
+/* Breadcrumbs */
+.breadcrumbs-link {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+/* Catalog */
+.catalog-products {
+  background-color: #f0f0f0;
+}
+
+.catalog-subtitle {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title,
+.product-card-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.sort-control {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Products */
+.products-wrapper {
+  background-color: #ffffff;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: right;
+  color: #444444;
+}
+
+/* Catalog pagination */
+.button-load-more {
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.pagination-list {
+  background-color: #ebebeb;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: #444444;
+  opacity: 0.3;
+  text-decoration: none;
+}
