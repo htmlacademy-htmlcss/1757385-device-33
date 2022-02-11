@@ -1,0 +1,396 @@
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Raleway Extra Bold */
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Sticky-footer and base resetting */
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #000000;
+}
+
+.button {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Pages */
+
+.header-container {
+  background-color: #ffe17f;
+  color: #000000;
+
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+.main-navigation,
+.footer-navigation-list {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.navigation-submenu {
+  /* Hide submenu before submenu button realiation */
+  display: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+/* Search */
+.search-form-input,
+.search-form-input::placeholder,
+.search-form-input::-webkit-input-placeholder,
+.search-form-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+/* Slider */
+
+.slider-slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-image {
+  width: 560px;
+  margin-right: 40px;
+}
+
+.features-name {
+  font-size: 16px;
+}
+
+.features-value {
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Categories */
+.categories-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories-item {
+  width: 160px;
+  margin-right: 40px;
+}
+
+.categories-item:last-child {
+  margin-right: 0;
+}
+
+.categories-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.categories-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+/* Services */
+.service {
+  background-color: #f0f0f0;
+}
+
+.service-tab {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 63px;
+}
+
+.service-tab-buttons {
+  width: 280px;
+  margin-right: 116px;
+}
+
+.service-tab-text {
+  max-width: 450px;
+}
+
+/* Delivery */
+.delivery-button {
+  display: block;
+  width: 1160px;
+  margin: 0 auto;
+
+  background-color: #f0f0f0;
+}
+
+/* Index columns */
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* About */
+.about {
+  width: 520px;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-delivery-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+/* Contacts */
+.contacts {
+  width: 532px;
+}
+
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contacts-text {
+  max-width: 500px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Subscription */
+.subscription {
+  background-color: #f0f0f0;
+}
+
+.subscription-text {
+  max-width: 560px;
+}
+
+.subscription-input {
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.subscription-input::placeholder,
+.subscription-input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+/* Footer */
+.main-footer {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.footer-address {
+  line-height: 19px;
+}
+
+.footer-navigation {
+  text-align: center;
+}
+
+.footer-phone {
+  color: #ffffff;
+  text-align: right;
+}
+
+/* Inner page */
+.main-inner {
+  color: #000000;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.inner-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 20px;
+}
+
+.inner-header-title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #000000;
+}
+
+/* Breadcrumbs */
+.breadcrumbs-link {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+/* Catalog */
+.catalog-products {
+  background-color: #f0f0f0;
+}
+
+.catalog-container {
+  display: flex;
+}
+
+.catalog-subtitle {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-filter {
+  width: 320px;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.catalog-filter-title,
+.product-card-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* Catalog right column */
+.catalog-right-column {
+  width: 840px;
+}
+
+.sort-control {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Products */
+.products-wrapper {
+  background-color: #ffffff;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: right;
+  color: #444444;
+}
+
+/* Catalog pagination */
+.button-load-more {
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.pagination-list {
+  background-color: #ebebeb;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: #444444;
+  opacity: 0.3;
+  text-decoration: none;
+}
