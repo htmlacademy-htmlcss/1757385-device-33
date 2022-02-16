@@ -41,18 +41,19 @@
           </ul>
 
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
+            <li class="navigation-user-item navigation-user-profile">
+              <a class="navigation-user-link navigation-user-name" href="#">Коля Петухов</a>
+              <a class="navigation-user-link navigation-user-signout" href="#">Выйти</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Корзина</a>
             </li>
           </ul>
 
-          <ul class="navigation-list  main-navigation">
+          <ul class="navigation-list main-navigation">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html#delivery">Доставка</a>
             </li>
@@ -86,8 +87,7 @@
 
       <section class="catalog-products">
         <div class="catalog-container container">
-          <!-- Remove 'hidden' attribute after 'visually-hidden' pattern will have been realized-->
-          <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
+          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <h3 class="catalog-subtitle">фильтр:</h3>
@@ -162,8 +162,12 @@
                 <option value="new">Новые</option>
               </select>
 
-              <button class="sort-button sort-button-ascending" type="button">Сортировать по возрастанию</button>
-              <button class="sort-button sort-button-descending" type="button">Сортировать по убыванию</button>
+              <button class="sort-button sort-button-ascending" type="button">
+                <span class="visually-hidden">Сортировать по возрастанию</span>
+              </button>
+              <button class="sort-button sort-button-descending" type="button">
+                <span class="visually-hidden">Сортировать по убыванию</span>
+              </button>
             </div>
 
             <div class="products-wrapper">
@@ -259,7 +263,7 @@
         </section>
 
         <section class="footer-social">
-          <h2 class="vicually-hidden">Магазин гаджетов "Device" в социальных сетях</h2>
+          <h2 class="visually-hidden">Магазин гаджетов "Device" в социальных сетях</h2>
 
           <ul class="footer-social-list">
             <li class="footer-social-item">
