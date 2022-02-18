@@ -8,7 +8,9 @@
   <body>
     <header class="main-header">
       <div class="header-container container">
-        <img class="logo header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
+        <a class="header-logo-link">
+          <img class="logo header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
+        </a>
 
         <nav class="navigation">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -95,12 +97,14 @@
             </div>
           </div>
 
-          <button class="slider-button slider-button-prev" type="button">
-            <span class="visually-hidden">Предыдущий товар</span>
-          </button>
-          <button class="slider-button slider-button-next" type="button">
-            <span class="visually-hidden">Следующий товар</span>
-          </button>
+          <div class="slider-navigation">
+            <button class="slider-button slider-button-prev" type="button">
+              <span class="visually-hidden">Предыдущий товар</span>
+            </button>
+            <button class="slider-button slider-button-next" type="button">
+              <span class="visually-hidden">Следующий товар</span>
+            </button>
+          </div>
 
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
@@ -256,8 +260,8 @@
 
       <section class="subscription">
         <div class="subscription-container container">
-          <h2 class="title subscription-title">Подпишитесь<br>на рассылку</h2>
-          <p class="subscription-text">Еженедельный дайджест с обзорами новинок,длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <h2 class="title subscription-title">Подпишитесь на рассылку</h2>
+          <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail">
@@ -271,10 +275,13 @@
 
     <footer class="main-footer">
       <div class="footer-container container">
-        <section class="footer-address">
+        <a class="footer-logo-link">
           <img class="logo footer-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
+        </a>
+
+        <section class="footer-address">
           <h2 class="visually-hidden">Адрес</h2>
-          <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </section>
 
         <section class="footer-navigation">
@@ -315,10 +322,11 @@
         </section>
 
         <section class="footer-phone">
-          <h2 class="visually-hidden">По всем вопросам звоните по телефону:</h2>
-          <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="about-text" href="https://htmlacademy.ru/" target="_blank">.html<br>academy</a>
+          <h2 class="visually-hidden">По всем вопросам обращайтесь по телефону:</h2>
+          <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </section>
+
+        <a class="footer-academy-logo" href="https://htmlacademy.ru/" target="_blank">.html<br>academy</a>
       </div>
     </footer>
   </body>
