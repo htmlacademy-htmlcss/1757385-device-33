@@ -8,11 +8,11 @@
   <body>
     <header class="main-header">
       <div class="header-container container">
-        <a class="logo-link" href="index.html">
-          <img class="logo header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
-        </a>
-
         <nav class="navigation">
+          <a class="header-logo-link" href="index.html">
+            <img class="logo header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
+          </a>
+
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="search-form-input" type="search" name="search-request" placeholder="Текст поиска">
             <button class="search-form-button" type="submit">Найти</button>
@@ -178,7 +178,7 @@
                     <h3 class="product-card-title">Любительская селфи-палка</h3>
                     <b class="product-card-price">500 ₽</b>
                   </a>
-                  <button class="button button-more" type="button">Подробнее</button>
+                  <button class="button button-more product-card-button" type="button">Подробнее</button>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="product.html">
@@ -186,7 +186,7 @@
                     <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                     <b class="product-card-price">1500 ₽</b>
                   </a>
-                  <button class="button button-more" type="button">Подробнее</button>
+                  <button class="button button-more product-card-button" type="button">Подробнее</button>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="product.html">
@@ -194,7 +194,7 @@
                     <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                     <b class="product-card-price">2500 ₽</b>
                   </a>
-                  <button class="button button-more" type="button">Подробнее</button>
+                  <button class="button button-more product-card-button" type="button">Подробнее</button>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="product.html">
@@ -202,7 +202,7 @@
                     <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                     <b class="product-card-price">1500 ₽</b>
                   </a>
-                  <button class="button button-more" type="button">Подробнее</button>
+                  <button class="button button-more product-card-button" type="button">Подробнее</button>
                 </li>
               </ul>
 
@@ -239,12 +239,13 @@
 
     <footer class="main-footer">
       <div class="footer-container container">
+        <a class="logo-link" href="index.html">
+          <img class="logo footer-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
+        </a>
+
         <section class="footer-address">
-          <a class="logo-link" href="index.html">
-            <img class="logo footer-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
-          </a>
           <h2 class="visually-hidden">Адрес</h2>
-          <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </section>
 
         <section class="footer-navigation">
@@ -286,9 +287,10 @@
 
         <section class="footer-phone">
           <h2 class="visually-hidden">По всем вопросам звоните по телефону:</h2>
-          <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="about-text" href="https://htmlacademy.ru/" target="_blank">.html<br>academy</a>
+          <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </section>
+
+        <a class="footer-academy-logo" href="https://htmlacademy.ru/" target="_blank">.html<br>academy</a>
       </div>
     </footer>
   </body>
