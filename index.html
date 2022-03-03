@@ -14,11 +14,14 @@
           </a>
 
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="search-form-input" type="search" name="search-request" placeholder="Текст поиска">
-            <button class="search-form-button" type="submit">Найти</button>
+            <div class="search-form-inner-wrapper">
+              <input class="search-form-input" type="search" name="search-request" placeholder="Поиск по сайту">
+            </div>
+            <div class="search-form-inner-wrapper">
+              <button class="search-form-button" type="submit">Найти</button>
+            </div>
           </form>
 
-          <!-- Move user menu to this place to save right sequence of focusable elements -->
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item navigation-user-profile">
               <a class="navigation-user-link" href="#">
@@ -68,29 +71,42 @@
             </li>
           </ul>
 
-          <button class="button catalog-button" type="button">Каталог товаров<span class="catalog-button-icon"></span></button>
-          <ul class="navigation-list navigation-submenu">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Моноподы для cелфи</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Умные часы</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-
           <ul class="navigation-list main-navigation">
+            <li class="navigation-item">
+              <button class="button catalog-button" type="button">Каталог товаров<span class="catalog-button-icon"></span></button>
+              <ul class="navigation-submenu">
+                <li class="navigation-submenu-group">
+                  <ul>
+                    <li class="navigation-submenu-item">
+                    <a class="navigation-submenu-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="catalog.html">Моноподы для cелфи</a>
+                    </li>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-submenu-group">
+                  <ul>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-submenu-group">
+                  <ul>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#delivery">Доставка</a>
             </li>
@@ -112,17 +128,21 @@
         <div class="slider-container container">
           <h2 class="visually-hidden">Популярные товары</h2>
 
-          <div class="slider-slide">
-            <img class="slide-image" src="images/main-slider/slider-1.png" width="560" height="560" alt="Квадрокоптер-охотник.">
-            <div class="slider-slide-description">
-              <h3 class="title slide-title">Порхает как бабочка,<br>жалит как пчела!</h3>
-              <!-- Delete 'hidden' attribute when decoration is goint to be realized for the slides -->
-              <div class="slide-index" hidden>
+          <ul class="slider-slides-list">
+            <li class="slider-slides-item">
+              <div class="slider-slide-index">
                 01
               </div>
-              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <div class="slider-slide-image">
+                <img class="slide-image" src="images/main-slider/slider-1.png" width="560" height="560"
+                alt="Квадрокоптер-охотник.">
+              </div>
+              <div class="slider-slide-description">
+                <h3 class="title slide-title">Порхает как бабочка,<br>жалит как пчела!</h3>
+                <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              </div>
               <a class="button styled-button slide-button" href="#">Подробнее</a>
-              <ul class="features-list">
+              <ul class="slider-slide-features-list">
                 <li class="features-item">
                   <span class="features-name">Дальность полета</span>
                   <b class="features-value">800 м</b>
@@ -132,19 +152,19 @@
                   <b class="features-value">50 м</b>
                 </li>
               </ul>
-            </div>
-          </div>
+            </li>
+          </ul>
 
           <div class="slider-navigation">
-            <button class="slider-button slider-button-prev" type="button">
+            <button class="button slider-button slider-button-prev slider-button-disabled" type="button">
               <span class="visually-hidden">Предыдущий товар</span>
             </button>
-            <button class="slider-button slider-button-next" type="button">
+            <button class="button slider-button slider-button-next" type="button">
               <span class="visually-hidden">Следующий товар</span>
             </button>
           </div>
 
-          <ol class="slider-pagination">
+          <ol class="slider-pagination-list">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
                 <span class="visually-hidden">1 товар</span>
