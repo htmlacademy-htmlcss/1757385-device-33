@@ -14,8 +14,12 @@
           </a>
 
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="search-form-input" type="search" name="search-request" placeholder="Текст поиска">
-            <button class="search-form-button" type="submit">Найти</button>
+            <div class="search-form-inner-wrapper">
+              <input class="search-form-input" type="search" name="search-request" placeholder="Поиск по сайту">
+            </div>
+            <div class="search-form-inner-wrapper">
+              <button class="search-form-button" type="submit">Найти</button>
+            </div>
           </form>
 
           <ul class="navigation-list navigation-user">
@@ -65,40 +69,89 @@
                 </svg>
                 Корзина
               </a>
-            </li>
-          </ul>
-
-          <button class="button catalog-button" type="button">Каталог товаров<span class="catalog-button-icon"></span></button>
-          <ul class="navigation-list navigation-submenu">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link">Моноподы для cелфи</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Умные часы</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Квадрокоптеры</a>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Отложенные товары</h2>
+                  <ul class="cart-item-list">
+                    <li class="cart-item">
+                      <a class="cart-item-content" href="#">
+                        <img class="cart-item-image" src="images/catalog/thumbnails/product-1-thumbnail.jpg" width="39" height="43" alt="">
+                        <p class="cart-item-title">Любительская селфи-палка</p>
+                      </a>
+                      <button class="cart-item-remove-button" type="button">
+                        <span class="visually-hidden">Удалить товар из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <a class="cart-item-content" href="#">
+                        <img class="cart-item-image" src="images/catalog/thumbnails/product-2-thumbnail.jpg" width="39" height="43" alt="">
+                        <p class="cart-item-title">Профессиональная селфи-палка</p>
+                      </a>
+                      <button class="cart-item-remove-button" type="button">
+                        <span class="visually-hidden">Удалить товар из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="popover-cart-total">
+                    <p class="popover-cart-total-item">
+                      Товаров:<span>2</span>
+                    </p>
+                    <p class="popover-cart-total-item">
+                      Сумма:<span>2000 ₽</span>
+                    </p>
+                  </div>
+                  <div class="popover-cart-footer">
+                    <a class="button popover-cart-button" href="#">Открыть корзину</a>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
 
           <ul class="navigation-list main-navigation">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html#delivery">Доставка</a>
+              <button class="button catalog-button" type="button">Каталог товаров<span class="catalog-button-icon"></span></button>
+              <ul class="navigation-submenu">
+                <li class="navigation-submenu-group">
+                  <ul>
+                    <li class="navigation-submenu-item">
+                    <a class="navigation-submenu-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="catalog.html">Моноподы для cелфи</a>
+                    </li>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-submenu-group">
+                  <ul>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-submenu-group">
+                  <ul>
+                    <li class="navigation-submenu-item">
+                      <a class="navigation-submenu-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html#warranty">Гарантия</a>
+              <a class="navigation-link" href="#delivery">Доставка</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html#contacts">Контакты</a>
+              <a class="navigation-link" href="#warranty">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -126,11 +179,30 @@
         <div class="catalog-container container">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <h3 class="catalog-subtitle">фильтр:</h3>
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
+
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 119px;">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Задайте минимальную цену.</span>
+                    </button>
+                    <label class="range-input-label">
+                      от <input type="number" class="range-input" value="0" name="min-price" style="width: 10px;">
+                    </label>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Задайте максимальную цену.</span>
+                    </button>
+                    <label class="range-input-label">
+                      до <input type="number" class="range-input" value="5000" name="max-price" style="width: 40px;">
+                    </label>
+                  </div>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset class="catalog-filter-group">
@@ -139,31 +211,36 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="black-color" checked>
-                    Черный
+                    <span class="control-mark"></span>
+                    <span class="control-label">Черный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="white-color" checked>
-                    Белый
+                    <span class="control-mark"></span>
+                    <span class="control-label">Белый</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="blue-color">
-                    Синий
+                    <span class="control-mark"></span>
+                    <span class="control-label">Синий</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="red-color">
-                    Красный
+                    <span class="control-mark"></span>
+                    <span class="control-label">Красный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="pink-color">
-                    Розовый
+                    <span class="control-mark"></span>
+                    <span class="control-label">Розовый</span>
                   </label>
                 </li>
               </ul>
@@ -175,29 +252,33 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="bluetooth" value="yes" checked>
-                    Есть
+                    <span class="control-mark"></span>
+                    <span class="control-label">Есть</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="bluetooth" value="no">
-                    Нет
+                    <span class="control-mark"></span>
+                    <span class="control-label">Нет</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <button class="button button-show" type="submit">Показать</button>
+            <button class="button styled-button button-show" type="submit">Показать</button>
           </form>
 
           <div class="catalog-right-column">
             <div class="catalog-sort">
-              <h3 class="catalog-subtitle catalog-sort-title">Сортировка:</h3>
-              <select class="sort-control" id="sort">
-                <option value="popular">Популярные</option>
-                <option value="cheap">Дешевые</option>
-                <option value="new">Новые</option>
-              </select>
+              <h3 class="catalog-subtitle">Сортировка:</h3>
+              <div class="sort">
+                <select class="sort-control" id="sort">
+                  <option value="popular">Популярные</option>
+                  <option value="cheap">Дешевые</option>
+                  <option value="new">Новые</option>
+                </select>
+              </div>
 
               <button class="sort-button sort-button-ascending" type="button">
                 <span class="visually-hidden">Сортировать по возрастанию</span>
