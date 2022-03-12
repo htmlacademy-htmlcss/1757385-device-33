@@ -15,12 +15,12 @@
           </a>
 
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="search-form-inner-wrapper">
+            <label class="search-form-label">
               <input class="search-form-input" type="search" name="search-request" placeholder="Поиск по сайту">
-            </div>
-            <div class="search-form-inner-wrapper">
+            </label>
+            <label class="search-form-label">
               <button class="search-form-button" type="submit">Найти</button>
-            </div>
+            </label>
           </form>
 
           <ul class="navigation-list navigation-user">
@@ -167,7 +167,6 @@
 
           <ul class="slider-list">
             <li class="slider-item slider-item-current">
-              <div class="slider-index">01</div>
               <div class="slider-image-wrapper">
                 <img class="slider-image" src="images/main-slider/slider-1.png" width="560" height="560"
                 alt="Квадрокоптер-охотник.">
@@ -189,7 +188,6 @@
               </ul>
             </li>
             <li class="slider-item">
-              <div class="slider-index">02</div>
               <div class="slider-image-wrapper">
                 <img class="slider-image" src="images/main-slider/slider-2.png" width="560" height="560"
                 alt="Фитнес браслет, чуткий и сопереживающий.">
@@ -207,7 +205,6 @@
               </ul>
             </li>
             <li class="slider-item">
-              <div class="slider-index">03</div>
               <div class="slider-image-wrapper">
                 <img class="slider-image" src="images/main-slider/slider-3.png" width="560" height="560"
                 alt="Селфи-палка. Очень длинная!">
@@ -344,34 +341,19 @@
             </ul>
 
             <ul class="service-tab-content-list">
-              <li class="service-tab-content-item service-tab-current-item" id="delivery">
-                <div class="service-tab-content">
-                  <h3 class="title service-tab-title">Доставка</h3>
-                  <p class="service-tab-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                </div>
-                <div class="service-tab-icon-wrapper">
-                  <img class="service-tab-icon" src="images/tab-icons/courier.svg" width="136" height="164" alt="">
-                </div>
+              <li class="service-tab-content-item service-tab-delivery-item service-tab-current-item" id="delivery">
+                <h3 class="title service-tab-title">Доставка</h3>
+                <p class="service-tab-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </li>
 
-              <li class="service-tab-content-item" id="warranty">
-                <div class="service-tab-content">
-                  <h3 class="title service-tab-title">Гарантия</h3>
-                  <p class="service-tab-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                </div>
-                <div class="service-tab-icon-wrapper">
-                  <img class="service-tab-icon" src="images/tab-icons/warranty.svg" width="171" height="195" alt="">
-                </div>
+              <li class="service-tab-content-item service-tab-warranty-item" id="warranty">
+                <h3 class="title service-tab-title">Гарантия</h3>
+                <p class="service-tab-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </li>
 
-              <li class="service-tab-content-item" id="credit">
-                <div class="service-tab-content">
-                  <h3 class="title service-tab-title">Кредит</h3>
-                  <p class="service-tab-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-                </div>
-                <div class="service-tab-icon-wrapper">
-                  <img class="service-tab-icon" src="images/tab-icons/credit.svg" width="156" height="188" alt="">
-                </div>
+              <li class="service-tab-content-item service-tab-credit-item" id="credit">
+                <h3 class="title service-tab-title">Кредит</h3>
+                <p class="service-tab-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
               </li>
             </ul>
           </div>
@@ -556,22 +538,22 @@
             </button>
           </header>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="get">
-            <p class="field-group field-group-name">
+            <div class="field-group field-group-name">
               <label class="field-label" for="name">Ваше имя:</label>
               <input class="field-input" type="text" id="name" name="name" placeholder="Введите имя" required>
               <span class="field-tip">Добавьте имя</span>
-            </p>
-            <p class="field-group field-group-email">
+            </div>
+            <div class="field-group field-group-email">
               <label class="field-label" for="email">Ваш e-mail:</label>
               <input class="field-input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
               <span class="field-tip field-tip-error">Забавный у вас адрес</span>
-            </p>
-            <p class="field-group field-group-goods">
+            </div>
+            <div class="field-group field-group-goods">
               <label class="field-label" for="chosen-goods">Что нужно привезти:</label>
               <input class="field-input" type="text" id="chosen-goods" name="chosen-goods" placeholder="В свободной форме" required>
-            </p>
-            <p class="field-group field-group-quantity">
-              <span class="field-label">
+            </div>
+            <div class="field-group field-group-quantity">
+              <p class="field-label">
                 <label class="field-label" for="quantity">Количество:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button"></button>
@@ -579,17 +561,17 @@
                     Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
                   </span>
                 </span>
-              </span>
-              <span class="field-input-wrapper">
-                <input class="field-input" type="number" value="1" min="1" max="100" id="quantity" name="quantity">
+              </p>
+              <div class="field-quantity">
                 <button class="number-button number-button-minus" type="button">
-                  <span class="visually-hidden">Нажмите, чтобы убавить количество на единицу</span>
+                  <span class="visually-hidden">Нажмите, чтобы убавить количество на единицу.</span>
                 </button>
+                <input class="field-input" type="number" value="1" min="1" max="100" id="quantity" name="quantity">
                 <button class="number-button number-button-plus" type="button">
-                  <span class="visually-hidden">Нажмите, чтобы прибавить количество на единицу</span>
+                  <span class="visually-hidden">Нажмите, чтобы прибавить количество на единицу.</span>
                 </button>
-              </span>
-            </p>
+              </div>
+            </div>
             <button class="button styled-button modal-button" type="submit">Отправить</button>
           </form>
         </section>
