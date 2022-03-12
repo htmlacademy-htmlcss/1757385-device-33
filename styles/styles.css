@@ -471,16 +471,12 @@ a[href].logo-link:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.search-form-inner-wrapper {
-  height: 40px;
-}
-
-.search-form-inner-wrapper:nth-child(2) {
+.search-form-label:nth-child(2) {
   position: relative;
   left: -2px;
 }
 
-.search-form-inner-wrapper:focus-within {
+.search-form-label:focus-within {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -500,7 +496,7 @@ a[href].logo-link:focus {
   background-position: 16px 50%;
 }
 
-input[type="search"]::-webkit-search-cancel-button {
+.search-form-input::-webkit-search-cancel-button {
   display: none;
 }
 
@@ -519,6 +515,7 @@ input[type="search"]::-webkit-search-cancel-button {
   line-height: 20px;
   text-align: center;
   border: 2px solid #000000;
+  border-left: 0;
   border-radius: 0px 50px 50px 0px;
   background-color: transparent;
   cursor: pointer;
@@ -580,6 +577,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  counter-reset: slide-index;
 }
 
 .slider-item {
@@ -593,7 +591,7 @@ input[type="search"]::-webkit-search-cancel-button {
   display: grid;
 }
 
-.slider-index {
+.slider-item::before {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
   align-self: end;
@@ -604,6 +602,8 @@ input[type="search"]::-webkit-search-cancel-button {
   line-height: 75%;
   color: #ffffff;
   cursor: default;
+  counter-increment: slide-index;
+  content: "0"counter(slide-index)
 }
 
 .slider-image-wrapper {
@@ -927,20 +927,35 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .service-tab-content-item {
   display: none;
-  justify-content: space-between;
+  flex-direction: column;
   min-height: 100%;
   padding: 72.5px 0;
   box-sizing: border-box;
+}
 
+.service-tab-delivery-item {
+  background-image: url("../images/tab-icons/courier.svg");
+  background-size: 136px 164px;
+  background-repeat: no-repeat;
+  background-position: right 84px top 77.5px;
+}
+
+.service-tab-warranty-item {
+  background-image: url("../images/tab-icons/warranty.svg");
+  background-size: 171px 195px;
+  background-repeat: no-repeat;
+  background-position: right 49px top 62px;
+}
+
+.service-tab-credit-item {
+  background-image: url("../images/tab-icons/credit.svg");
+  background-size: 156px 188px;
+  background-repeat: no-repeat;
+  background-position: right 49px top 65.5px;
 }
 
 .service-tab-current-item {
   display: flex;
-}
-
-.service-tab-content {
-  width: 480px;
-  margin-right: 50px;
 }
 
 .service-tab-title {
@@ -949,6 +964,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .service-tab-text {
+  max-width: 500px;
   margin: 0;
 }
 
@@ -1533,7 +1549,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .field-group-quantity {
-  position: relative;
   grid-area: 2 / 3 / span 1 / span 1;
 }
 
@@ -1543,10 +1558,17 @@ input[type="search"]::-webkit-search-cancel-button {
   letter-spacing: -0.02em;
   color: #000000;
   margin-bottom: 14px;
+  margin-top: 0;
 }
 
-.field-input-wrapper {
-  position: relative;
+p.field-label {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.field-quantity {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(60px, auto));
 }
 
 .field-input {
@@ -1591,10 +1613,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .field-input[name="quantity"] {
-  width: 100%;
+  width: 60px;
   height: 100%;
   box-sizing: border-box;
   text-align: center;
+  z-index: 1;
 }
 
 .field-input[name="quantity"]:disabled ~ .number-button {
@@ -1609,23 +1632,14 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .number-button {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   height: 60px;
   width: 60px;
   padding: 0;
   font: inherit;
   font-size: 22px;
   border: 0;
-  background-color: transparent;
-}
-
-.number-button-plus {
-  right: 0;
-}
-
-.number-button-minus {
-  left: 0;
+  background-color: #f0f0f0;
 }
 
 .number-button-plus::after,
@@ -1659,6 +1673,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .number-button:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+  z-index: 2;
 }
 
 .field-tip {
@@ -1689,9 +1704,9 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .tooltip {
-  position: absolute;
-  margin-left: 8px;
-  margin-top: -3px;
+  position: relative;
+  left: 8px;
+  top: -3px;
   z-index: 5;
 }
 
@@ -1717,8 +1732,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .tooltip-text {
   position: absolute;
-  top: 100%;
-  margin-top: 10px;
+  top: calc(100% + 4px);
   right: -41px;
   display: block;
   width: 200px;
@@ -2390,9 +2404,9 @@ a[href].breadcrumbs-link:focus {
 .popover {
   position: absolute;
   top: calc(100% + 6px);
-  left: 30px;
-  z-index: 4;
+  left: 50%;
   transform: translateX(-50%);
+  z-index: 4;
   width: 320px;
   box-sizing: border-box;
   font-size: 16px;
