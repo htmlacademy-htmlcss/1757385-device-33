@@ -1040,7 +1040,7 @@ a[href].logo-link:focus {
   margin-left: 42.5px;
   border-radius: 50%;
   content: "i";
-  font-family: sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: none;
