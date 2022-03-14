@@ -3,16 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин гаджетов "Девайс"</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <!-- Page header -->
     <header class="main-header">
       <div class="header-container container">
         <nav class="navigation">
-          <a class="header-logo-link logo-link">
-            <img class="logo header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
+          <!-- Logo -->
+          <a class="header-logo-link">
+            <img class="logo-image" src="images/logo-header.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
           </a>
 
+          <!-- Header search form -->
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="search-form-label">
               <input class="search-form-input" type="search" name="search-request" placeholder="Поиск по сайту">
@@ -22,6 +26,7 @@
             </label>
           </form>
 
+          <!-- User navigation -->
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item navigation-user-profile">
               <a class="navigation-user-link" href="#">
@@ -107,8 +112,9 @@
             </li>
           </ul>
 
+          <!-- Main navigation -->
           <ul class="navigation-list main-navigation">
-            <li class="navigation-item">
+            <li class="navigation-item popup-item">
               <button class="button catalog-button" type="button">Каталог товаров<span class="catalog-button-icon"></span></button>
               <ul class="navigation-submenu">
                 <li class="navigation-submenu-group">
@@ -157,13 +163,16 @@
       </div>
     </header>
 
+    <!-- Page container -->
     <main class="main-container main-index">
       <h1 class="visually-hidden">Магазин гаджетов "Device"</h1>
 
+      <!-- Slider -->
       <section class="slider">
         <div class="slider-container container">
           <h2 class="visually-hidden">Популярные товары</h2>
 
+          <!-- Slider item list -->
           <ul class="slider-list">
             <li class="slider-item slider-item-current">
               <div class="slider-image-wrapper">
@@ -230,6 +239,7 @@
             </li>
           </ul>
 
+          <!-- Slider navigation -->
           <div class="slider-navigation">
             <button class="button slider-button slider-button-prev slider-button-disabled" type="button" tabindex="-1">
               <span class="visually-hidden">Предыдущий товар</span>
@@ -239,6 +249,7 @@
             </button>
           </div>
 
+          <!-- Slider pagination -->
           <ol class="slider-pagination-list" style="margin-top: 240px;">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -259,63 +270,63 @@
         </div>
       </section>
 
-      <section class="categories">
-        <div class="categories-container container">
-          <h2 class="visually-hidden">Категории каталога товаров</h2>
+      <!-- Categories -->
+      <section class="categories container">
+        <h2 class="visually-hidden">Категории каталога товаров</h2>
 
-          <ul class="categories-list">
-            <li class="categories-item">
-              <a href="#" class="categories-link">
-                <h3 class="categories-title">Виртуальная реальность</h3>
-                <div class="categories-image-wrapper">
-                  <img class="categories-image" src="images/categories/vr.svg" width="97" height="55" alt="">
-                </div>
-              </a>
-            </li>
-            <li class="categories-item">
-              <a href="catalog.html" class="categories-link">
-                <h3 class="categories-title">Моноподы для селфи</h3>
-                <div class="categories-image-wrapper categories-image-wrapper-bottomed">
-                  <img class="categories-image" src="images/categories/monopod.svg" width="86" height="117" alt="">
-                </div>
-              </a>
-            </li>
-            <li class="categories-item">
-              <a href="#" class="categories-link">
-                <h3 class="categories-title">Экшн-камеры</h3>
-                <div class="categories-image-wrapper">
-                  <img class="categories-image" src="images/categories/action-camera.svg" width="71" height="87" alt="">
-                </div>
-              </a>
-            </li>
-            <li class="categories-item">
-              <a href="#" class="categories-link">
-                <h3 class="categories-title">Фитнес-браслеты</h3>
-                <div class="categories-image-wrapper">
-                  <img class="categories-image" src="images/categories/fitness-bracelet.svg" width="107" height="65" alt="">
-                </div>
-              </a>
-            </li>
-            <li class="categories-item">
-              <a href="#" class="categories-link">
-                <h3 class="categories-title">Умные часы</h3>
-                <div class="categories-image-wrapper">
-                  <img class="categories-image" src="images/categories/smart-watch.svg" width="56" height="98" alt="">
-                </div>
-              </a>
-            </li>
-            <li class="categories-item">
-              <a href="#" class="categories-link">
-                <h3 class="categories-title">Квадрокоптеры</h3>
-                <div class="categories-image-wrapper">
-                  <img class="categories-image" src="images/categories/quadrocopter.svg" width="132" height="69" alt="">
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="categories-list">
+          <li class="categories-item">
+            <a href="#" class="categories-link">
+              <h3 class="categories-title">Виртуальная реальность</h3>
+              <div class="categories-image-wrapper">
+                <img class="categories-image" src="images/categories/vr.svg" width="97" height="55" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="catalog.html" class="categories-link">
+              <h3 class="categories-title">Моноподы для&nbsp;селфи</h3>
+              <div class="categories-image-wrapper categories-image-wrapper-bottomed">
+                <img class="categories-image" src="images/categories/monopod.svg" width="86" height="117" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="#" class="categories-link">
+              <h3 class="categories-title">Экшн-камеры</h3>
+              <div class="categories-image-wrapper">
+                <img class="categories-image" src="images/categories/action-camera.svg" width="71" height="87" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="#" class="categories-link">
+              <h3 class="categories-title">Фитнес-браслеты</h3>
+              <div class="categories-image-wrapper">
+                <img class="categories-image" src="images/categories/fitness-bracelet.svg" width="107" height="65" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="#" class="categories-link">
+              <h3 class="categories-title">Умные часы</h3>
+              <div class="categories-image-wrapper">
+                <img class="categories-image" src="images/categories/smart-watch.svg" width="56" height="98" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="#" class="categories-link">
+              <h3 class="categories-title">Квадрокоптеры</h3>
+              <div class="categories-image-wrapper">
+                <img class="categories-image" src="images/categories/quadrocopter.svg" width="132" height="69" alt="">
+              </div>
+            </a>
+          </li>
+        </ul>
       </section>
 
+      <!-- Service -->
       <section class="service">
         <div class="service-container container">
           <h2 class="visually-hidden">Дополнительный сервис</h2>
@@ -342,7 +353,7 @@
             <ul class="service-tab-content-list">
               <li class="service-tab-content-item service-tab-delivery-item service-tab-current-item" id="delivery">
                 <h3 class="title service-tab-title">Доставка</h3>
-                <p class="service-tab-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <p class="service-tab-text">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.</p>
               </li>
 
               <li class="service-tab-content-item service-tab-warranty-item" id="warranty">
@@ -359,12 +370,15 @@
         </div>
       </section>
 
+      <!-- Delivery button -->
       <button class="button delivery-button" type="button">
         Доставим редкий товар под заказ
       </button>
 
+      <!-- Section with two columns -->
       <div class="index-columns container">
-        <section class="about">
+        <!-- About company -->
+        <section class="about index-column">
           <h2 class="title about-title">О нас</h2>
           <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -378,7 +392,8 @@
           <a class="button styled-button about-button" href="about.html">Подробнее о нас</a>
         </section>
 
-        <section class="contacts" id="contacts">
+        <!-- Contacts -->
+        <section class="contacts index-column" id="contacts">
           <h2 class="title contacts-title">Контакты</h2>
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
 
@@ -398,10 +413,11 @@
         </section>
       </div>
 
+      <!-- Subscription -->
       <section class="subscription">
         <div class="subscription-container container">
-          <h2 class="title subscription-title">Подпишитесь на рассылку</h2>
-          <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <h2 class="title subscription-title">Подпишитесь<br>на рассылку</h2>
+          <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail" required>
@@ -413,17 +429,21 @@
       </section>
     </main>
 
+    <!-- Page footer -->
     <footer class="main-footer">
       <div class="footer-container container">
-        <a class="footer-logo-link logo-link">
-          <img class="logo footer-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
+        <!-- Logo -->
+        <a class="footer-logo-link">
+          <img class="logo-image" src="images/logo-footer.svg" width="145" height="36" alt="Логотип магазина 'Device'.">
         </a>
 
+        <!-- Address -->
         <section class="footer-address">
           <h2 class="visually-hidden">Адрес</h2>
           <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </section>
 
+        <!-- Footer navigation -->
         <section class="footer-navigation">
           <h2 class="visually-hidden">Навигация по сайту</h2>
           <ul class="footer-navigation-list">
@@ -439,11 +459,13 @@
           </ul>
         </section>
 
+        <!-- Phone number -->
         <section class="footer-phone">
           <h2 class="visually-hidden">По всем вопросам обращайтесь по телефону:</h2>
           <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </section>
 
+        <!-- Social icons -->
         <section class="footer-social">
           <h2 class="visually-hidden">Магазин гаджетов "Device" в социальных сетях</h2>
 
@@ -512,7 +534,9 @@
           </ul>
         </section>
 
+        <!-- Academy link -->
         <a class="footer-academy-link" href="https://htmlacademy.ru/" target="_blank">
+          <span class="visually-hidden">Сайт HTML Academy.</span>
           <svg width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#academy-logo-path)">
               <path d="M0 13.3v2.6h2.5v-2.6H0ZM11.6 4.9c-1.6 0-2.8.7-3.6 1.7h-.1V.4h-2v15.5h2v-5.3C7.9 8.5 9.2 7 11.2 7c1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.8c.1-3-1.8-5-4.5-5ZM26.6 5.2h-4.8V1.5h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.2h4.8v-2ZM41.1 5c-1.6 0-2.9.8-3.5 2h-.1a3.7 3.7 0 0 0-3.4-2c-1.4 0-2.5.8-3.1 1.8h-.1V5.2H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V9.3c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13c0 1.8 1 2.8 2.8 2.8h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.4h-2V13ZM28.9 20a4.9 4.9 0 0 0-3.9-1.7c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-2h.1v1.7h2V18.6h-2V20Zm-3.6 7.5a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.4c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20a4.9 4.9 0 0 0-3.9-1.7c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-2h.1v1.7h2V18.6h-2V20Zm-3.6 7.5a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.2a5 5 0 0 0-3.9-2c-3.1 0-5.4 2.4-5.4 5.7 0 3.3 2.2 5.6 5.4 5.6 1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.8h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.3a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-3h8.8c.2-3.5-2-6.2-5.5-6.2Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 18.3a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.4l-3.6-9h-2.2l4.8 11.7c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
@@ -527,6 +551,7 @@
       </div>
     </footer>
 
+    <!-- Popup -->
     <div class="modal-container">
       <div class="modal modal-delivery">
         <section class="modal-content">
